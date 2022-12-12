@@ -9,4 +9,5 @@
     <string name="next_question">Next question</string>
     <string name="finish_quiz">Finish</string>
     <string name="select_answer_warning">Please select an answer</string>
+    <string name="back_pressed_warning">Press back againt to exit</string>
 </resources>
