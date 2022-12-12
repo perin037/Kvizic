@@ -5,13 +5,14 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 public class StartScreenActivity extends AppCompatActivity {
 
     private ActivityResultLauncher<String> _quizActivityLauncher;
-    private String _username = "USER";
+    private final String _username = "USER";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,6 @@ public class StartScreenActivity extends AppCompatActivity {
     }
 
     private void onQuizFinished(final Integer result){
-
+        Log.i("QUIZ", "Result: " + result);
     }
 }
